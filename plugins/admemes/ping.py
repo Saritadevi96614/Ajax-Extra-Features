@@ -29,9 +29,9 @@ async def ping(_, message):
     await rm.edit(f"Pong!\n{time_taken_s:.3f} ms")
 
 
-@Client.on_message(filters.command("repo", COMMAND_HAND_LER) & f_onw_fliter)
-async def repo(_, message):
-    await message.reply_text(REPO)
+@Client.on_message(filters.command("creator", COMMAND_HAND_LER) & f_onw_fliter)
+async def creator(_, message):
+    await message.reply_text(creator)
 
 
 @Client.on_message(filters.command("group", COMMAND_HAND_LER) & f_onw_fliter)
@@ -44,8 +44,8 @@ async def channel(_, message):
     await message.reply_text(CHANNEL)
 
 
-@Client.on_message(filters.command("ajax", COMMAND_HAND_LER) & f_onw_fliter)
-async def ajax(_, message):
-    await message.reply_text(AJAX)
+@Client.on_message(filters.command("cynite", COMMAND_HAND_LER) & f_onw_fliter)
+async def cynite(_, message):
+    await message.reply_text(Cynite)
 
 
